@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: wheat;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(32, 8, 70);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(32, 8, 70);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: wheat;
+  padding: 13px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color:rgb(12, 77, 107);}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+body{
+background-color:rgb(232, 240, 166);
+}
+textarea{
+background-color:rgb(19, 4, 43);
+color:white;
+padding:10px;
+font-size:17px;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: wheat;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="https://munasib666.github.io/1st-portfolio/" target="blank">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a>
+
+    </div>
+  </li>
+</ul>
+
+
+    <h2>welcome to text analyzer</h2>
+<form action="/analyze" method="get">
+<textarea name="text" id="" cols="100" rows="10"></textarea>  <br>
+<input type="checkbox" name="removepunc" id="1">REMOVE_Punctuation <br>
+    <input type="checkbox" name="vowel" id="2">VOWEL extract<br>
+    <input type="checkbox" name="evenodd" id="3">EVEN or ODD <br>
+    <input type="checkbox" name="dtoh" id="4">Decimal TO Hexadecimal <br>
+    <input type="checkbox" name="btod" id="5">Binary  TO Decimal <br><br>
+<button type="submit" style="background-color:rgb(25, 4, 63)"> <i style="color:wheat">.........submit........</i> </button>
+</form>
+<div class="footer">
+  <p style="color:rgb(122, 7, 7)">Copyright:2021</p>
+</div>
+
+</body>
+</html>
